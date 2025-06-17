@@ -18,7 +18,7 @@
 //----------------------------------------
 
 // DHT 센서 설정
-#define DHTPIN 4      // DHT 센서가 연결된 GPIO 핀 번호
+#define DHTPIN 25      // DHT 센서가 연결된 GPIO 핀 번호
 #define DHTTYPE DHT11 // 사용하는 DHT 센서 타입 (DHT11, DHT22 등)
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -33,12 +33,12 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #define On_Board_LED_PIN 2
 
 //----------------------------------------WiFi 네트워크 SSID 및 비밀번호
-const char *ssid = "USE_WIFI"; // 실제 사용하는 WiFi SSID로 변경하세요.
+const char *ssid = "4201_AP212_2.4G"; // 실제 사용하는 WiFi SSID로 변경하세요.
 const char *password = ""; // 실제 사용하는 WiFi 비밀번호로 변경하세요.
 //----------------------------------------
 
 const char* Web_App_URL = "https://script.google.com/macros/s/AKfycbyVb9Ns_Na9KQ_uaOdJyq2noWHUZBRanEiqnjlaUyH1bscrjLD-FCVXRN2gujvbDg97vw/exec"; // 실제 Google Apps Script URL로 변경하세요.
-const char* Station_Id = "스마일버그"; 
+const char* Station_Id = "방은성"; 
 
 // 전역 변수
 String Status_Read_Sensor = "Initializing..."; // 초기 상태
